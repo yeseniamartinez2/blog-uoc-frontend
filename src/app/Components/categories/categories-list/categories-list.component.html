@@ -1,0 +1,26 @@
+<h2>{{'Table.CategoriesList' | translate}}</h2>
+<button (click)="createCategory()">{{'Table.Add' | translate}}</button>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>{{'Table.Title' | translate}}</th>
+      <th>{{'Table.Description' | translate}}</th>
+      <th>CSS COLOR</th>
+      <th>{{'Table.Actions' | translate}}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let category of categories">
+      <td>{{ category.categoryId }}</td>
+      <td>{{ category.title }}</td>
+      <td>{{ category.description }}</td>
+      <td>{{ category.css_color }}</td>
+      <td>
+        <button (click)="updateCategory(category.categoryId)">{{'Table.Update' | translate}}</button>
+        <button (click)="deleteCategory(category.categoryId)">{{'Table.Delete' | translate}}</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

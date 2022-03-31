@@ -1,0 +1,22 @@
+<!-- TODO 3 -->
+<app-translation></app-translation>
+<div class="filterSearch">
+<input type="text" placeholder="Search by title or alias" [(ngModel)]="filterTitle" name="filterTitle">
+</div>
+<div class="postDiv" *ngFor="let post of posts | filterDataPipe: filterTitle">
+    <div class="category" >
+        <label class="categLabel" *ngFor="let categ of post.categories" [ngStyle]="{'background-color': categ.css_color}">
+            {{categ.title}}
+        </label>
+    </div>
+    <label><b>{{'Home.Title' | translate}}: {{post.title}}</b></label><br>
+    <label>{{'Home.Description' | translate}}: {{post.description}}</label><br>
+    <label>{{'Home.Likes' | translate}}: {{post.num_likes}}</label><br>
+    <label>{{'Home.Dislikes' | translate}}: {{post.num_dislikes}}</label><br>
+    <label>{{'Home.Publicated' | translate}}: {{post.publication_date | formatDate:4}}</label><br>
+    <label>{{'Home.Published' | translate}}: {{post.userAlias}}</label><br>
+    <div *ngIf="showButtons">
+        <button (click)="like(post.postId)">Like</button>
+        <button (click)="dislike(post.postId)">Dislike</button>
+    </div>
+</div>

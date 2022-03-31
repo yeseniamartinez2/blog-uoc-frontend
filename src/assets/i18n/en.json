@@ -1,0 +1,41 @@
+{
+    "Home":{
+        "Accept":"Accept",
+        "AdminCat":"Admin categories",
+        "Categories":"Categories",
+        "Description":"Description",
+        "Dislikes":"Dislikes",
+        "Home":"Home",
+        "Language":"Select your language",
+        "Likes":"Likes",
+        "Login":"Login",
+        "Logout":"Logout",
+        "Profile":"Profile",
+        "Publicated":"Publication date",
+        "Published":"Published by",
+        "Title": "Title"
+    },
+    "Register":{
+        "BirthDate":"Birth date",
+        "FirstSurname":"First surname",
+        "Name": "Name",
+        "Password": "Password",
+        "Register":"Register",
+        "SecondSurname": "Second surname",
+        "Surname": "Surname"
+    },
+    "Table": {
+        "Actions":"ACTIONS",
+        "Add":"ADD",
+        "CategoriesList":"Categories List",
+        "CategoryForm":"Category Form",
+        "Delete":"DELETE",
+        "Description":"DESCRIPTION",
+        "Dislikes":"DISLIKES",
+        "Likes": "LIKES",
+        "PostForm": "Post Form",
+        "PostList": "Post List",
+        "Title": "TITLE",
+        "Update":"UPDATE"
+    }
+}

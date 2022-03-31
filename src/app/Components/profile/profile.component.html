@@ -1,0 +1,33 @@
+<div style="margin-left: auto; margin-right: auto">
+  <p id="profileFeedback"></p>
+</div>
+<div>
+  <h1>{{'Home.Profile' | translate}}</h1>
+
+  <form action="post" [formGroup]="profileForm" (ngSubmit)="updateUser()">
+    <div class ="updateCell">
+      <label>{{'Register.Name' | translate}}</label><br>
+      <input type="text" formControlName="name" placeholder="Nombre">
+    </div>
+    <div class ="updateCell">
+      <label>{{'Register.FirstSurname' | translate}}</label><br>
+      <input type="text" formControlName="surname_1" placeholder="Primer apellido"></div>
+    <div class ="updateCell">
+      <label>{{'Register.SecondSurname' | translate}}</label><br>
+      <input type="text" formControlName="surname_2" placeholder="Segundo apellido"></div>
+    <div class ="updateCell">
+      <label>Alias</label><br>
+      <input type="text" formControlName="alias" placeholder="Alias"></div>
+    <div class ="updateCell">
+      <label>{{'Register.BirthDate' | translate}}</label><br>
+      <input type="text" formControlName="birth_date" placeholder="Nacimiento (yyyy-mm-dd)"></div>
+    <div class ="updateCell">
+      <label>Email</label><br>
+      <input type="text" formControlName="email" placeholder="Email"></div>
+    <div class ="updateCell">
+      <label>{{'Register.Password' | translate}}</label><br>
+      <input type="text" formControlName="password" placeholder="Contraseña"></div>
+    <button type="submit">{{'Home.Accept' | translate}}</button>
+  </form>
+  <!-- TODO 6 -->
+</div>

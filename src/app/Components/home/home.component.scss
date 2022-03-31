@@ -1,0 +1,32 @@
+.postDiv{
+    border: solid 1px;
+    border-color: #cccccc;
+    box-shadow: 5px 10px #cccccc;
+    border-radius: 5px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-bottom: 50px;
+}
+
+.category{
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.categLabel{
+    margin: 2px;
+    border: solid 1px;
+    border-radius: 3px;
+}
+
+.filterSearch{
+    text-align: center;
+    margin-bottom: 10px;
+}

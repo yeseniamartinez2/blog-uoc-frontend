@@ -1,0 +1,21 @@
+
+<div style="margin-left: auto; margin-right: auto">
+  <p id="loginFeedback"></p>
+</div>
+
+<div>
+  <h1>{{'Home.Login' | translate}}</h1>
+
+  <form method="post" [formGroup]="loginForm" (ngSubmit)="login()">
+    <div class="loginCell">
+      <label>Email</label><br>
+      <input type="text" formControlName="email" placeholder="Email">
+    </div>
+    <div class="loginCell">
+      <label>{{'Register.Password' | translate}}</label><br>
+      <input type="password" formControlName="password" placeholder="Contraseña">
+    </div>
+    <button type="submit">{{'Home.Accept' | translate }}</button>
+  </form>
+  <!-- TODO 21 -->
+</div>

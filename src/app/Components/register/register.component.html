@@ -1,0 +1,109 @@
+<div style="margin-left: auto; margin-right: auto">
+  <p id="registerFeedback"></p>
+</div>
+<div>
+  <h1>{{'Register.Register' | translate}}</h1>
+
+  <form action="post" [formGroup]="registerForm" (ngSubmit)="register()">
+    <div class ="registerCell">
+      <label>{{'Register.Name' | translate}}*</label><br>
+      <input type="text" formControlName="name" placeholder="Name">
+      <div *ngIf="name.errors">
+        <div *ngIf="name.errors && isValidForm != null && !isValidForm" [ngClass]="'error'">
+          <div *ngIf="name.errors.required">Name is required</div>
+          <div *ngIf="name.errors.minlength">
+            Name has to be longer than 5 characters.
+          </div>
+          <div *ngIf="name.errors.maxlength">
+            Name has to be shorter than 25 characters.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class ="registerCell">
+      <label>{{'Register.FirstSurname' | translate}}*</label><br>
+      <input type="text" formControlName="surname_1" placeholder="First surname">
+      <div *ngIf="surname_1.errors">
+        <div *ngIf="surname_1.errors && isValidForm != null && !isValidForm" [ngClass]="'error'">
+          <div *ngIf="surname_1.errors.required">First surname is required</div>
+          <div *ngIf="surname_1.errors.minlength">
+            First surname has to be longer than 5 characters.
+          </div>
+          <div *ngIf="surname_1.errors.maxlength">
+            First surname has to be shorter than 25 characters.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class ="registerCell">
+      <label>{{'Register.SecondSurname' | translate}}</label><br>
+      <input type="text" formControlName="surname_2" placeholder="Second surname">
+      <div *ngIf="surname_2.errors">
+        <div *ngIf="surname_2.errors && isValidForm != null && !isValidForm" [ngClass]="'error'">
+          <div *ngIf="surname_2.errors.minlength">
+            First surname has to be longer than 5 characters.
+          </div>
+          <div *ngIf="surname_2.errors.maxlength">
+            First surname has to be shorter than 25 characters.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class ="registerCell">
+      <label>Alias*</label><br>
+      <input type="text" formControlName="alias" placeholder="Alias">
+      <div *ngIf="alias.errors">
+        <div *ngIf="alias.errors && isValidForm != null && !isValidForm" [ngClass]="'error'">
+          <div *ngIf="alias.errors.required">Alias is required</div>
+          <div *ngIf="alias.errors.minlength">
+            Alias has to be longer than 5 characters.
+          </div>
+          <div *ngIf="alias.errors.maxlength">
+            Alias has to be shorter than 25 characters.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class ="registerCell">
+      <label>{{'Register.BirthDate' | translate}}*</label><br>
+      <input type="date" formControlName="birth_date">
+      <div *ngIf="birth_date.errors">
+        <div *ngIf="birth_date.errors && isValidForm != null && !isValidForm" [ngClass]="'error'">
+          <div *ngIf="birth_date.errors.required">birth_date is required</div>
+          <div *ngIf="birth_date.errors.pattern">
+            Birth date format is not correct.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class ="registerCell">
+      <label>Email*</label><br>
+      <input type="text" formControlName="email" placeholder="Email">
+      <div *ngIf="email.errors">
+        <div *ngIf="email.errors && isValidForm != null && !isValidForm" [ngClass]="'error'">
+          <div *ngIf="email.errors.required">Email is required</div>
+          <div *ngIf="email.errors.email">
+            Email format is not correct.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class ="registerCell">
+      <label>{{'Register.Password' | translate}}*</label><br>
+      <input type="text" formControlName="password" placeholder="Contraseña">
+      <div *ngIf="password.errors">
+        <div *ngIf="password.errors && isValidForm != null && !isValidForm" [ngClass]="'error'">
+          <div *ngIf="password.errors.required">Password is required</div>
+          <div *ngIf="password.errors.minlength">
+            Password has to be longer than 8 characters.
+          </div>
+          <div *ngIf="password.errors.maxlength">
+            Password can not be longer than 16 characters.
+          </div>
+        </div>
+      </div>
+    </div>
+    <button type="submit">Aceptar</button>
+  </form>
+  <!-- TODO 18 -->
+</div>

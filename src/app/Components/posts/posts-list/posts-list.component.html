@@ -1,0 +1,30 @@
+<h2>{{'Table.PostList' | translate}}</h2>
+
+<button (click)="createPost()">{{'Table.Add' | translate}}</button>
+
+<table>
+    <thead>
+        <tr>
+            <th>POST ID</th>
+            <th>{{'Table.Title' | translate}}</th>
+            <th>{{'Table.Description' | translate}}</th>
+            <th>{{'Table.Likes' | translate}}</th>
+            <th>{{'Table.Dislikes' | translate}}</th>
+            <th>{{'Table.Actions' | translate}}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let post of postsList">
+            <td>{{ post.postId }}</td>
+            <td>{{ post.title }}</td>
+            <td>{{ post.description }}</td>
+            <td>{{ post.num_likes }}</td>
+            <td>{{ post.num_dislikes }}</td>
+            <td>
+                <button (click)="updatePost(post.postId)">{{'Table.Update' | translate}}</button>
+                <button (click)="deletePost(post.postId)">{{'Table.Delete' | translate}}</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<!-- TODO 11 -->

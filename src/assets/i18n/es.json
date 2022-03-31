@@ -1,0 +1,41 @@
+{
+    "Home":{
+        "Accept":"Aceptar",
+        "AdminCat":"Admin categorías",
+        "Categories":"Categorías",
+        "Dislikes":"No me gusta",
+        "Description":"Descripción",
+        "Home":"Inicio",
+        "Language":"Selecciona tu idioma",
+        "Likes":"Me gusta",
+        "Login":"Iniciar sesión",
+        "Logout":"Cerrar sesión",
+        "Profile":"Perfil",
+        "Publicated":"Fecha de publicación",
+        "Published":"Publicado por",
+        "Title": "Título"
+    },
+    "Register":{
+        "BirthDate":"Fecha nacimiento",
+        "FirstSurname":"Primer apellido",
+        "Name": "Nombre",
+        "Password": "Contraseña",
+        "Register":"Registrar",
+        "SecondSurname": "Segundo apellido",
+        "Surname": "Apellido"
+    },
+    "Table": {
+        "Actions":"ACCIONES",
+        "Add":"AÑADIR",
+        "CategoriesList":"Lista de Categorías",
+        "CategoryForm":"Formulario de Categorías",
+        "Delete":"BORRAR",
+        "Description":"DESCRIPCIÓN",
+        "Dislikes":"No me gusta",
+        "Likes": "Me gusta",
+        "PostForm": "Formulario de Posts",
+        "PostList": "Lista de Posts",
+        "Title": "TÍTULO",
+        "Update":"ACTUALIZAR"
+    }
+}

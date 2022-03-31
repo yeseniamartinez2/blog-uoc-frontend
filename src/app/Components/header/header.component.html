@@ -1,0 +1,15 @@
+<!-- NO AUTH REQUIRED -->
+<div class="header" *ngIf="showNoAuthSection">
+  <button (click)="home()">{{'Home.Home' | translate}}</button>
+  <button (click)="login()">{{'Home.Login' | translate}}</button>
+  <button (click)="register()">{{'Register.Register' | translate}}</button>
+</div>
+
+<!-- AUTH REQUIRED -->
+<div class="header" *ngIf="showAuthSection">
+  <button (click)="home()">{{'Home.Home' | translate}}</button>
+  <button (click)="adminPosts()">Admin posts</button>
+  <button (click)="adminCategories()">{{'Home.AdminCat' | translate}}</button>
+  <button (click)="profile()">{{'Home.Profile' | translate}}</button>
+  <button (click)="logout()">{{'Home.Logout' | translate}}</button>
+</div>
